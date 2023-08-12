@@ -1,0 +1,77 @@
+.working__sfare{
+    margin-bottom: 100px;
+    .working__sfare__title{
+        & h2{
+            @include font($font__Exo, 600, 48px, 60px, $main__color)
+        }
+        & p{
+            width: 100%;
+            max-width: 667px;
+            margin-top: 32px;
+            margin-bottom: 40px;
+            @include font($font__Pt, 400, 16px, 24px, $second__color)
+        }
+    }
+    .working__sfare--wrapper{
+        display: flex;
+        gap: 0 140px;
+        .working__sfare--item__box{
+            display: flex;
+            flex-direction: column;
+            gap: 16px 0;
+            .working__sfare__item{
+                border: 1px solid  #FFF;
+                padding: 40px 125px 48px 40px;
+                display: flex;
+                gap: 0 32px;
+                width: 100%;
+                max-width: 687px;
+                border-radius: 10px;
+                background: #FFF;
+                box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.12);
+                .working__sfare__item--radio{
+                    & input{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+                .working__sfare__item--title{
+                    display: flex;
+                    flex-direction:column;
+                    gap: 24px 0;
+                    & h4{
+                        @include font($font__Exo, 600, 20px, 30px, $main__color);  
+                    }
+                    & p{
+                        @include font($font__Pt, 400, 16px, 24px,$second__color);  
+                    }
+                }
+            }
+            .working__sfare__item:hover{
+                border: 1px solid  #0B7572;
+            }
+        }
+        .working__right--item{
+            & h3{
+                margin-bottom: 8px;
+                @include font($font__Exo, 600, 20px, 30px, $main__color)
+            }
+            & strong{
+                position: relative;
+                @include font($font__Exo, 600, 54px, 81px, $main__color)
+            }
+            & span{
+                @include font($font__Exo, 600, 20px, 30px, $second__color)
+            }
+            & strong::before{
+                position: absolute;
+                content: "";
+                width: 260px;
+                height: 3px;
+                background-color: #FFCE50;
+                bottom: -20px;
+            }
+        }
+        
+    }
+}

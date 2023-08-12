@@ -1,0 +1,80 @@
+header{
+    margin-top: 109px;
+    margin-bottom: 100px;
+    .container{
+        .east__box{
+            margin-bottom: 167px;
+            padding-right: 745px;
+            .east__content{
+                padding-top: 81px;
+                display: flex;
+                flex-direction:column;
+                gap: 40px 0;
+                & h1{
+                    @include font($font__Exo, 600, 52px, 65px, $main__color);
+                }
+                & p {
+                    width: 100%;
+                    max-width: 525px;
+                    @include font($font__Pt, 400, 16px, 24px, $second__color)
+                }
+                & h5{
+                    position: relative;
+                    @include font($font__Pt, 700, 16px, 24px, $main__color)
+                }
+                & h5::before{
+                    position:absolute;
+                    bottom: -7px;
+                    content: "";
+                    height: 3px;
+                    width: 104px;
+                    background-color: #FFCE50;
+                }
+                & h5:hover{
+                    cursor: pointer;
+                }
+            }
+            position: relative;
+            .desk__photo{
+                visibility: visible;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        } 
+    } 
+    .east__consalting-box{
+        width: 100%;
+        max-width: 1240px;
+        height: 341px;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .east__consatl--item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            position: relative;
+            & img{
+                position:relative;
+                left: -75px;
+                width: 92px;
+            }
+            & h4{
+                padding-top: 24px;
+                padding-bottom: 16px;
+                width: 100%;
+                max-width: 228px;
+                @include font($font__Exo, 600, 20px,27px, $main__color);
+            }
+            & p{
+                width:100%;
+                max-width: 225px;
+                @include font($font__Pt, 400, 16px, 24px, $second__color)
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.succes__work{
+    margin-bottom: 212px;
+    .succes__work--title{
+        & h2{
+            @include font($font__Exo, 600, 48px, 60px,$main__color)
+        }
+        & p{
+            width: 100%;
+            max-width: 500px;
+            margin-top: 32px;
+            margin-bottom: 56px;
+            @include font($font__Pt, 400, 16px, 24px, $second__color)
+        }
+    }
+    .succes__work__item--box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        .succes__work__item{
+            position: relative;
+            padding-right: 70px;
+            padding-left: 32px;
+            width: 100%;
+            max-width: 393px;
+            height: 439px;
+            border-radius: 10px;
+            background:#FFF;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+            & img{
+                position: relative;
+                right: 32px;
+            }
+            & h5{
+                margin-top: 25px;
+                @include font($font__Exo, 600, 20px, 27px, $main__color)
+            }
+            & p{
+                margin-top: 16px;
+                margin-bottom: 32px;
+                @include font($font__Pt, 400, 16px, 24px, $second__color)
+            }
+            & strong{
+                position: relative;
+                @include font($font__Exo, 600, 16px, 21.6px, $main__color)
+            }
+            & strong::before{
+                position: absolute;
+                bottom: -10px;
+                content: "";
+                width: 86px;
+                height: 3px;
+                background-color: #FFCE50;
+            }
+        }
+    }
+}

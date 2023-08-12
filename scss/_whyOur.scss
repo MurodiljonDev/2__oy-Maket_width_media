@@ -1,0 +1,44 @@
+.why__our{
+    margin-bottom: 120px;
+    .why__our--wrapper{
+        position: relative;
+        margin-bottom: 73px;
+        background-image: url('/img/why__our__machine.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+        & h3{
+            position: absolute;
+            top: 178px;
+            left: 90px;
+            width: 100%;
+            max-width: 362px;
+            @include font($font__Exo, 600, 48px, 60px, white)
+        }
+        & img{
+            height: 453.5px;
+        }    
+    }
+    .why__our--bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 62px;
+        .why__our--item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 40px;
+            .why__our--title{
+                & h5{
+                    margin-bottom: 16px;
+                    @include font($font__Exo, 600, 20px, 27px, $main__color)
+                }
+                & p{
+                    width: 100%;
+                    max-width: 291px;
+                    @include font($font__Pt, 400, 16px, 24px, $second__color)
+                }
+            }
+        }
+    }
+}
